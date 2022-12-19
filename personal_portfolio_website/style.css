@@ -177,10 +177,19 @@ main{
   gap: 15px;
 }
 .avatar-box{
+  margin: 20px;
+  width: 130px;
+  height: 120px;
   background: var(--bg-gradient-onyx);
   border-radius: 20px;
 }
-
+.avatar-box img{
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 110px;
+  height: 110px;
+}
 
 
 
