@@ -137,7 +137,7 @@ body {
 
 /*Start Code*/
 
-.sidebar{
+.sidebar,article{
   background: var(--eerie-black-2);
   border: 1px solid var(--jet);
   border-radius: 20px;
@@ -177,7 +177,49 @@ body {
 .icon-box ion-icon { 
   --ionicon-stroke-width: 35px; 
 }
+.article{
+  display: none;
+}
+.article.active{
+  display: block;
+  animation: fade 0.5s ease backwards;
+}
+@keyframes fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.h2,
+.h3,
+.h4,
+.h5 {
+  color: var(--white-2);
+  text-transform: capitalize;
+}
 
+.h2 { font-size: var(--fs-1); }
+
+.h3 { font-size: var(--fs-2); }
+
+.h4 { font-size: var(--fs-4); }
+
+.h5 {
+  font-size: var(--fs-7);
+  font-weight: var(--fw-500);
+}
+.article-title {
+  position: relative;
+  padding-bottom: 7px;
+}
+.article-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 3px;
+  background: var(--text-gradient-yellow);
+  border-radius: 3px;
+}
 main{
   margin: 15px 12px;
   margin-bottom: 75px;
