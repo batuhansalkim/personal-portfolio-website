@@ -13,4 +13,3 @@ sidebarBtn.addEventListener("click", function(){
     elementToggleFunc(sidebar);
 })
 
-
