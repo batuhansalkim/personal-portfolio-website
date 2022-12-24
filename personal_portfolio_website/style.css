@@ -656,11 +656,37 @@ main{
   line-height: 1.6;
 }
 
+/*Kullandığım Teknolojiler*/
 
+.clients{
+  margin-bottom: 15;
+  
+}
+.clients-list{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+  margin: 0 -15px;
+  padding: 25px;
+  padding-bottom: 25px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline:25px;
+}
 
-
-
-
+.clients-item{
+  min-width: 50%;
+  scroll-snap-align: start;
+}
+.clients-item img{
+  width: 100%;
+  filter: grayscale(1);
+  transition: var(--transition-1);
+}
+.clients-item img:hover { filter: grayscale(0); }
 
 
 

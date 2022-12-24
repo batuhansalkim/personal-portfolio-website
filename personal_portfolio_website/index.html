@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body oncontextmenu="return false;">
 
     <main>
         <!--ASİDE SECTİON CODE --->
@@ -163,7 +163,7 @@
 
             <!--ABOUT SECTİON CODE-->
 
-            <article class="about active" data-page="about">
+            <article class="about" data-page="about">
                 <header>
                     <h2 class="h2 article-title">About Me</h2>
                 </header>
@@ -235,7 +235,9 @@
                         </li>
                     </ul>
                 </section>
-<!--Yetenekler-->
+
+
+                <!--Yetenekler-->
                 <section class="testimonials">
 
                     <h3 class="h3" testimonials-title>Experiences</h3>
@@ -244,7 +246,7 @@
                         
                         <li class="testimonials-item">
 
-                            <div class="content-card" data-testimoials-item>
+                            <div  class="content-card" data-testimoials-item>
                                 <figure class="testimonials-avatar-box">
                                     <img src="./images/avatar-1.png" alt="" width="60" data-testimonials-avatar>
                                 </figure>
@@ -262,7 +264,7 @@
                         </li>
 
                         <li class="testimonials-item">
-                            <div class="content-card" data-testimoials-item>
+                            <div  class="content-card" data-testimoials-item>
                                 <figure class="testimonials-avatar-box">
                                     <img src="./images/avatar-2.png" alt="" width="60" data-testimonials-avatar>
                                 </figure>
@@ -282,7 +284,7 @@
 
                         <li class="testimonials-item">
                         
-                            <div class="content-card" data-testimoials-item>
+                            <div  class="content-card" data-testimoials-item>
                                 <figure class="testimonials-avatar-box">
                                     <img src="./images/avatar-3.png" alt="" width="60" data-testimonials-avatar>
                                 </figure>
@@ -318,14 +320,13 @@
                                     </p>
                                 </div>
                             </div>
-                        </li>
-
-                        
-                        
+                        </li> 
 
                     </ul>
                 </section>
-<!--Diller-->
+                <!--Diller-->
+
+
                 <div class="modal-container " data-modal-container>
                     <div class="overlay " data-overlay></div>
 
@@ -336,7 +337,7 @@
 
                         <div class="modal-img-wrapper">
                             <figure class="modal-avatar-box">
-                                <img src="./images/avatar-1.png" alt="" width="80" data-model-img>
+                                <img src="./images/avatar-1.png" alt="" width="80" data-modal-img>
                             </figure>
                             <img src="./images/icon-quote.svg" alt="">
                         </div>
@@ -356,10 +357,69 @@
                 </div>
 
                 <!--Clients Code-->
+
+                <section class="clients">
+                    <h3 class="h3 clients-title">Kullandığım Teknolojiler</h3>
+
+                    <ul class="clients-list has-scrollbar">
+
+                        <li class="clients-item">
+                            <a href="#">
+                                <img src="./images/logo-1-color.png" alt="">
+                            </a>
+                        </li>
+
+                        <li class="clients-item">
+                            <a href="#">
+                                <img src="./images/logo-2-color.png" alt="">
+                            </a>
+                        </li>
+
+                        <li class="clients-item">
+                            <a href="#">
+                                <img src="./images/logo-3-color.png" alt="">
+                            </a>
+                        </li>
+
+                        <li class="clients-item">
+                            <a href="#">
+                                <img src="./images/logo-4-color.png" alt="">
+                            </a>
+                        </li>
+
+                        <li class="clients-item">
+                            <a href="#">
+                                <img src="./images/logo-5-color.png" alt="">
+                            </a>
+                        </li>
+
+                        <li class="clients-item">
+                            <a href="#">
+                                <img src="./images/logo-6-color.png" alt="">
+                            </a>
+                        </li>
+
+                    </ul>
+                </section>
+
             </article>
 
+            <!--Özgeçmiş-->
 
-
+            <article class="resume  active" data-page="resume">
+                <header>
+                    <h2 class="h2 article-title">Resume</h2>
+                </header>
+                
+                <section class="timeline">
+                    <div>
+                        <div>
+                            <ion-icon name="book-outline"></ion-icon>
+                        </div>
+                        <h3 class="h3">Education</h3>
+                    </div>
+                </section>
+            </article>
 
         </div>
 
